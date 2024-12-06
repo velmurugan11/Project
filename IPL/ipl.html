@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL</title>
+    <style>
+        body{
+            background-color: rgb(51, 48, 48);
+        }
+        #M{
+            display: flex;
+            justify-content: center;
+        }
+        #Main{
+            background-color: rgb(255, 255, 255);
+            height: 500px;
+            width: 500px;
+            border: 2px black solid;
+            border-radius: 20px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            object-fit: contain;
+        }
+        button{
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+        }
+        #B1{
+            margin-left: 480px;
+            display: flex;
+            width: 400px;
+            justify-content: space-around;
+            /* background-color: aqua; */
+        }
+        #yellow{
+            background-color: yellow;
+            border: 1px black solid;
+        }
+        #blue{
+            background-color: blue;
+            border: 1px black solid;
+        }
+        #red{
+            background-color: red;
+            border: 1px black solid;
+        }
+        #Pink{
+            background-color: rgb(255, 0, 179);
+            border: 1px black solid;
+        }
+        #Violet{
+            background-color: rgb(100, 0, 109);
+            border: 1px black solid;
+        }
+        #Dark-blue{
+            background-color: rgb(73, 53, 187);
+            border: 1px black solid;
+        }
+        #Orange{
+            background-color: rgb(255, 72, 0);
+            border: 1px black solid;
+        }
+        #Blue-Red{
+            background-color: rgb(19, 17, 131);
+            border: 1px black solid;
+        }
+        #Fade-Blue{
+            background-color: rgba(14, 31, 80, 0.678);
+            border: 1px black solid;
+        }
+        #Dark-red{
+            background-color: #ff0000;
+            border: 1px black solid;
+        }
+    </style>
+    <script>
+        function CSK(){
+            document.getElementById("Main").style.backgroundImage="url(./dhoni.png)"
+        }
+        function MI(){
+            document.getElementById("Main").style.backgroundImage="url(./Rohit.jpg)"
+        }
+        function RCB(){
+            document.getElementById("Main").style.backgroundImage="url(./Kholi.jpg)"
+        }
+        function RR(){
+            document.getElementById("Main").style.backgroundImage="url(./Sanju.png)"
+        }
+        function KKR(){
+            document.getElementById("Main").style.backgroundImage="url(./Shreyas.png)"
+        }
+        function LSG(){
+            document.getElementById("Main").style.backgroundImage="url(./KL.png)"
+        }
+        function SRH(){
+            document.getElementById("Main").style.backgroundImage="url(./Nattu.png)"
+        }
+        function DC(){
+            document.getElementById("Main").style.backgroundImage="url(./Pant.png)"
+        }
+        function GT(){
+            document.getElementById("Main").style.backgroundImage="url(./Gill.png)"
+        }
+        function PK(){
+            document.getElementById("Main").style.backgroundImage="url(./dhawan.png)"
+        }
+
+    </script>
+</head>
+<body>
+    <div id="M">
+        <div id="Main"></div>
+    </div>
+    <div id="B1">
+    <button id="yellow" onclick="CSK()"></button>
+    <button id="blue" onclick="MI()"></button>
+    <button id="red" onclick="RCB()"></button>
+    <button id="Pink" onclick="RR()"></button>
+    <button id="Violet" onclick="KKR()"></button>
+    <button id="Dark-blue" onclick="LSG()"></button>
+    <button id="Orange" onclick="SRH()"></button>
+    <button id="Blue-Red" onclick="DC()"></button>
+    <button id="Fade-Blue" onclick="GT()"></button>
+    <button id="Dark-red" onclick="PK()"></button>
+    </div>
+</body>
+</html>
